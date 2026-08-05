@@ -5,6 +5,7 @@ tap "market-dot-dev/tap", trusted: true
 tap "yakitrak/yakitrak"
 
 brew "zstd"
+brew "gcalcli"
 brew "azure-cli"
 brew "bat"
 brew "cloc"
