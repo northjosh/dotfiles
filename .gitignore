@@ -1,0 +1,13 @@
+# Never sync secrets
+.npmrc
+.zshenv
+*.local
+*_token*
+*.key
+*.pem
+
+# Logs / state / caches
+*.log
+session.json
+release-notes.json
+*.bak

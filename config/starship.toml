@@ -1,0 +1,53 @@
+# Mostly stock starship. Only the modules below are overridden — everything else
+# (directory, git_branch, git_status, character, runtimes, …) uses the defaults,
+# so new starship versions pick up upstream changes automatically.
+
+# NOTE: ~/.zshrc runs starship with a GIT_CONFIG_* override setting
+# status.showUntrackedFiles=no, which skips the untracked-file walk (the prompt's
+# biggest cost in large repos). Side effect: git_status never shows its untracked
+# marker (`?`). CLI `git status` is unaffected. Remove that wrapper to restore it.
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+
+[container]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[package]
+disabled = true
+
+[maven]
+symbol = " "
+disabled = true
+
+
+# Bare icon, no version. Default is: "via [$symbol($version )]($style)"
+[java]
+symbol = " "
+format = "via [$symbol]($style)"
+
+[nodejs]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[kubernetes]
+symbol = "󱃾 "
+
+[os.symbols]
+Macos = " "
+Raspbian = " "
+
+[c]
+symbol = " "
+disabled= true
+
+[bun]
+disabled=true

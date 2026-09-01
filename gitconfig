@@ -1,0 +1,13 @@
+[user]
+	name = Joshua Mensah
+	email = joshmensah18@gmail.com
+	signingkey = /Users/josh/.ssh/id_rsa_work.pub
+[push]
+	autoSetupRemote = true
+[commit]
+	gpgsign = false
+[includeIf "hasconfig:remote.*.url:git@github.com:<github-org>/**"]
+	path = /Users/josh/<work-folder>/config/work.gitconfig
+[core]
+	autocrlf = input
+	untrackedCache = true
